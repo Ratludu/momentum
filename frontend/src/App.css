@@ -1,0 +1,231 @@
+.app {
+  min-height: 100vh;
+}
+
+.nav {
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #333;
+}
+
+.nav h1 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: #646cff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: #333;
+}
+
+.main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.page {
+  text-align: left;
+}
+
+.page h2 {
+  margin-bottom: 1.5rem;
+  color: #646cff;
+}
+
+.form {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+button {
+  background: #646cff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: #535bf2;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.analyze-btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.error {
+  background: #ff4444;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.success {
+  background: #44ff44;
+  color: #000;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.entries-list,
+.goals-list {
+  margin-top: 2rem;
+}
+
+.entries-list h3,
+.goals-list h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.entries-list ul,
+.goals-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.entry-item,
+.goal-item {
+  background: #1a1a1a;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border-left: 4px solid #646cff;
+}
+
+.entry-header,
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.entry-category,
+.goal-category {
+  font-weight: bold;
+  color: #646cff;
+}
+
+.entry-date,
+.goal-date {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.entry-notes,
+.goal-text {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.badge {
+  background: #44ff44;
+  color: #000;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #333;
+  border-top-color: #646cff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 1rem auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.analysis-result {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.analysis-result h3 {
+  margin-top: 0;
+  color: #646cff;
+}
+
+.analysis-content {
+  color: #ccc;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.analysis-content p {
+  margin: 0.5rem 0;
+}
